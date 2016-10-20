@@ -24,9 +24,9 @@ The sending of the email rely on the user of the script, so that he can check wh
 
 Open "mac-information-gatherer.applescript" in "ScriptEditor" and click run (►).
 
-The script will collect the information and display them in an outgoing mail window (mail.app).
+Or as sayed before fill the 3 first variables to meet your requirements then bundle the script as a .app
 
-As sayed before fill the 3 first variables to meet your requirements then bundle the script as a .app
+In any case the script will collect the information and display them in an outgoing mail window (mail.app).
 
 ##Why applescript ?
 

@@ -17,7 +17,7 @@ set appleIdInfo to do shell script idcmd
 --account on the machine info -> dscacheutil -q user | grep -A 3 -B 2 -e uid:\ 5'[0-9][0-9]'
 set accountsInfo to do shell script "dscacheutil -q user | grep -A 3 -B 2 -e uid:\\ 5'[0-9][0-9]'"
 
-set header to "Smart Origin Machine information
+set header to "Machine information
 "
 set hInfoHeader to "
 #1. Hardware information :
