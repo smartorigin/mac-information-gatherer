@@ -1,10 +1,10 @@
-#Mac Information Gatherer
+# Mac Information Gatherer
 
-##Project Info
+## Project Info
 
 This project is an applescript for system administrator. It's mean't to automate hardware and software information retrieval on a Mac. The script collects the information and open an outgoing mail window (mail.app) with all the collected information. The script could be bundle as a (.app) and delivered to end users for an effortless retrieval.
 
-###Usecase
+### Usecase
 
 You are a system administrator that want to collect all the information of your OSX/macOS IT Park in a few step. This script will generate a ready to send email with all the information.  
 	
@@ -20,7 +20,7 @@ You are a system administrator that want to collect all the information of your 
 
 The sending of the email rely on the user of the script, so that he can check what will be sent ;)
 
-##How to use it ?
+## How to use it ?
 
 Open "mac-information-gatherer.applescript" in "ScriptEditor" and click run (►).
 
@@ -28,11 +28,11 @@ Or as sayed before fill the 3 first variables to meet your requirements then bun
 
 In any case the script will collect the information and display them in an outgoing mail window (mail.app).
 
-##Why applescript ?
+## Why applescript ?
 
 Because applescript do not relies on Xcode or third party libraries. Applescript could be easilly bundled as a .app and delivered to non techie end-user.
 
-##What information are collected and how ?
+## What information are collected and how ?
 
 The following information are collected by executing some shell commands.
 
@@ -67,7 +67,7 @@ The following information are collected by executing some shell commands.
 </tr>
 </table>
 
-##Tested on
+## Tested on
 
 - OS X 10.11.6
 - macOS 10.12.0
