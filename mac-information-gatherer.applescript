@@ -11,9 +11,8 @@ set softwareInfo to do shell script "system_profiler SPSoftwareDataType"
 set networkInfo to do shell script "networksetup -listallhardwareports"
 --sender account info -> whoami
 set senderInfo to do shell script "whoami"
--- apple id info -> dscl . -read /Users/USERNAME | egrep -o '\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z0-9.-]+\b' | head -1
-set idcmd to "dscl . read /Users/" & senderInfo & " | egrep -o '\\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z0-9.-]+\\b' | head -1"
-set appleIdInfo to do shell script idcmd
+-- apple id info -> defaults read MobileMeAccounts Accounts | grep AccountID
+set appleIdInfo to do shell script "defaults read MobileMeAccounts Accounts | grep AccountID"
 --account on the machine info -> dscacheutil -q user | grep -A 3 -B 2 -e uid:\ 5'[0-9][0-9]'
 set accountsInfo to do shell script "dscacheutil -q user | grep -A 3 -B 2 -e uid:\\ 5'[0-9][0-9]'"
 
