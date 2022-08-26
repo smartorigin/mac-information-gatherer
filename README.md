@@ -55,7 +55,7 @@ The following information are collected by executing some shell commands.
 </tr>
 <tr>
 <td>Used apple id</td>
-<td>$ dscl . -read /Users/USERNAME | egrep -o '\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z0-9.-]+\b' | head -1</td>
+<td>$ defaults read MobileMeAccounts Accounts | grep AccountID</td>
 </tr>
 <tr>
 <td>Account that run the script</td>
